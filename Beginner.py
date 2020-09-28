@@ -93,7 +93,3 @@ print(type(y))
 total_min = 43 + 42 + 57
 total_hr = (total_min / 60)
 print(total_hr)
-
-
-
-
