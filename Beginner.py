@@ -93,3 +93,46 @@ print(type(y))
 total_min = 43 + 42 + 57
 total_hr = (total_min / 60)
 print(total_hr)
+print("###################################################")
+
+##################################################################################################
+# Video 3: String Operators 
+# String is a sequence of characters between quotes
+# Can also use negative index where the lower negative index indicates the last letter and the highest negative index reps the first letter
+
+print(len("Michael Jackson"))
+My_name = "Chris Jones"
+# Concatination of strings
+Statement = My_name + " is the best ever"
+print(Statement)
+
+# Should print out My_name 3 times
+print(3 * My_name)
+print(My_name[2])
+
+# Strings: Escape Sequences
+# Escape sequences represent strings that may be difficult to input.
+# \ (Backslashes) are meant to proceed escape sequences
+# \n represents a new line
+print("Chris Jones \n is the best")
+# \t represents a tab
+print("AB\tC\tDE")
+# Use a \\ in order to have a backslash in your string
+# Or put a R before the string
+print(r"Chris Jones \ is the best")
+
+# String Methods
+Reg_sentence = "This sentence is going to be used in a string method"
+New_sentence = Reg_sentence.upper()
+# The output for find is the first index of the sequence
+# If the output is not in the substring than the output will be -1
+print(Reg_sentence.find("ing"))
+print(New_sentence)
+
+# Slicing
+D = "ABCDEFG"
+print(D[0:3])
+
+# Stride value that prints out every second character of the string E
+E = 'clocrkr1e1c1t'
+print(E[::2])
