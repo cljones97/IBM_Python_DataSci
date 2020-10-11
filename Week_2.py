@@ -142,3 +142,36 @@ print("\n")
 ###########################################################################
 # Video 3: Sets
 
+# They are also a type of collection. Sets are a type of collection.
+# This means that like lists and tuples, you can input different Python types.
+# Unlike lists and tuples, they are unordered. This means sets do not record element position.
+# Sets only have unique elements. This means there is only one of a particular element in a set. 
+
+Set1 = {"pop", "rock", "indie", "soul", "hop-hop", "r&b", "country", "rock", "soul"}
+print(Set1)
+# Convert a list to a set
+New_List = ["Chris", "Jones", "Chris", "Windsor", "Gwenn"]
+New_set = set(New_List)
+print("New Set", New_set)
+# Add an element to a set
+New_set.add("Brianna")
+print(New_set)
+
+# Remove an element from a set
+New_set.remove("Brianna")
+print(New_set)
+
+# Check to see if element is in set
+print("Chris" in New_set)
+print("No" in New_set)
+
+# Set operations
+bball_set1 = {"76ers", "Pistons", "Cavs", "Celtics", "Heat"}
+bball_set2 = {"76ers", "Rockets", "Cavs", "Lakers", "Heat"}
+bball_set3 = bball_set1&bball_set2
+# Print a set that contains the union of both sets
+print(bball_set1.union(bball_set2))
+# Print out a set that contains the elements in both sets
+print(bball_set3)
+
+print(bball_set3.issubset(bball_set1))
