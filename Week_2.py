@@ -68,4 +68,3 @@ print(String1.split())
 String2 = "A, B, C, D"
 print(String2.split(","))
 
-print(len(("disco", 10)))
