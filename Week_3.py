@@ -4,6 +4,7 @@
 # Video 1: Conditions & Branching
 import time
 
+
 # Comparison Operators
 # Checking equalities/inequalities
 a = 6
@@ -137,3 +138,128 @@ A=['1','2','3']
 for a in A:
   print(2*a)
 
+
+print("##############################################")
+print("\n")
+
+################################################################
+# Video 3: Functions
+
+# Function that adds 1 to a
+def add(a):
+    b = a + 1
+    # print(a, "if you add one", b)
+    return(b)
+
+print(add(1))
+print(add(2))
+print(add(3))
+
+# Function to multiply two integers
+def Mult(a, b):
+    c = a * b
+    return(c)
+    # print('This is not printed')
+    
+result = Mult(12,2)
+result2 = Mult(10.0, 3.14)
+result3 = Mult(2, "Michael Jackson ")
+print(result)
+print(result2)
+print(result3)
+
+album_rat = [9.5, 8.0, 7.8, 9.3, 8.4, 8.7, 8.8, 6.3, 9.8]
+print(sum(album_rat))
+print(len(album_rat))
+print(sorted(album_rat))
+
+def PrintList(the_list):
+    for element in the_list:
+        print(element)
+
+print(PrintList(album_rat))
+
+# Squares the input parameter, then add 1
+def square(a):
+    
+    # Local variable b
+    b = 1
+    c = a * a + b
+    # print(a, "if you square + 1", c) 
+    return(c)
+
+print(square(4))
+
+# Using the square function with global variables
+x = 3
+# Makes function call and return function a y
+y = square(x)
+print(y)
+
+# Define the function for combining strings
+
+def con(a, b):
+    return(a + b)
+
+print(con("Chris ","Jones "))
+
+def Equation(a,b):
+    c = a + b + 2 * a * b - 1
+    if(c < 0):
+        c = 0 
+    else:
+        c = 5
+    return(c) 
+
+print(Equation(3,4))
+
+def printAll(*args): # All the arguments are 'packed' into args which can be treated like a tuple
+    print("No of arguments:", len(args)) 
+    for argument in args:
+        print(argument)
+#printAll with 3 arguments
+printAll('Horsefeather','Adonis','Bone')
+#printAll with 4 arguments
+printAll('Sidecar','Long Island','Mudslide','Carriage')
+
+def printDictionary(**args):
+    for key in args:
+        print(key + " : " + args[key])
+
+printDictionary(Country='Canada',Province='Ontario',City='Toronto')
+
+def addItems(list):
+    list.append("Three")
+    list.append("Four")
+
+myList = ["One","Two"]
+addItems(myList)
+print(myList)
+    
+print("##############################################")
+print("\n")
+
+################################################################
+# Video 4: Objects & Classes
+# Python classes and objects notebook code I was unable to get running
+
+# Create a class Circle
+"""
+class Circle(object):
+    
+    # Constructor
+    def __init__(self, radius=3, color='blue'):
+        self.radius = radius #Data Attributes
+        self.color = color #Data Attributes
+    
+    # Method
+    def add_radius(self, r):
+        self.radius = self.radius + r
+        return(self.radius)
+    
+    # Method
+    def drawCircle(self):
+        plt.gca().add_patch(plt.Circle((0, 0), radius=self.radius, fc=self.color))
+        plt.axis('scaled')
+        plt.show()  
+"""
