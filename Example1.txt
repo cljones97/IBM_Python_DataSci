@@ -1,0 +1,5 @@
+Python Read/Write with Open/Close
+This is line 1
+This is line 2
+This is line 3
+And that's it for this text document
