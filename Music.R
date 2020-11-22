@@ -65,7 +65,8 @@ top_two_thou <- music_df %>%
   arrange(Number, Artist, Album) %>%
   head(10)
 
-
+# James and cap saw my project, it was dope
+# Fenny didn't like it 
 
 
 
